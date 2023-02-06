@@ -22,11 +22,11 @@ function range (start, end, step = 1) {
     }
 }
 
-function sum (range) {
-    let sum = 0
-    for (i=0; i<range.length; i++) {
-        sum = sum + range[i]
-    } return sum
+function sum (array) {
+    let total = 0
+    for (i=0; i<array.length; i++) {
+        total = total + array[i]
+    } return total
 }
 
 console.log(range(1, 10, 1));

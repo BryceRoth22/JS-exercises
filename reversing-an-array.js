@@ -8,8 +8,12 @@ function reverseArray(array1) {
     } return arrayReversed
 }
 
-function reverseArrayInPlace(arrayValue) {
-    console.log(arrayValue)
+function reverseArrayInPlace(arrayIn) {
+    for (i = 0; i < Math.floor(arrayIn.length / 2); i++) {
+        let old = arrayIn[i]
+        arrayIn[i] = arrayIn[arrayIn.length - 1 -i]
+        arrayIn[arrayIn.length -1 - i] = old
+    } return arrayIn
 }
 
 console.log(reverseArray(["A", "B", "C"]));
